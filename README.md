@@ -15,7 +15,5 @@ The structure of the model is as follow:
 
 ![cnn](cnn.png)
 
-### Examples
-
 
 Data Source: https://www.insectimages.org/index.cfm. 
