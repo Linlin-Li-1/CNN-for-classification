@@ -1,7 +1,19 @@
-# Deep Learning Model for Classification
+# CNN Model for Classification
 
-I will train a deep learning model to classify beetles, cockroaches and dragonflies and explain how the neural network classified the images.
+I used PyTorch to train a CNN model to classify images of three insects (beetles, cockroaches and dragonflies).
 
-Data Source: [https://www.dropbox.com/s/fn73sj2e6c9rhf6/insects.zip?dl=0](https://www.dropbox.com/s/fn73sj2e6c9rhf6/insects.zip?dl=0)
 
-Original images from https://www.insectimages.org/index.cfm. 
+The structure of the model is as follow:
+- input size: (3 x 84, 84); 
+- conv1: Conv2d(3, 16, kernel_size=(5, 5), stride=(2, 2), padding=(1, 1)); 
+- max_pool2d(2); 
+- conv2: Conv2d(16, 64, kernel_size=(3, 3), stride=(1, 1)); 
+- max_pool2d(2); 
+- fc1: Linear(in_features=5184, out_features=256, bias=True);
+- fc2: Linear(in_features=256, out_features=84, bias=True);
+- fc3: Linear(in_features=84, out_features=3, bias=True).
+
+![cnn](cnn.png)
+
+
+Data Source: https://www.insectimages.org/index.cfm. 
