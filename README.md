@@ -5,7 +5,7 @@ I used PyTorch to train a CNN model to classify images of three insects (beetles
 
 The structure of the model is as follow:
 - input size: (3 x 84, 84); 
-- conv1: Conv2d(3, 16, kernel_size=(5, 5), stride=(2, 2), padding=(1, 1)); 
+- conv1: Conv2d(3, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1)); 
 - max_pool2d(2); 
 - conv2: Conv2d(16, 64, kernel_size=(3, 3), stride=(1, 1)); 
 - max_pool2d(2); 
